@@ -1,7 +1,7 @@
 // https://nitro.unjs.io/config
 export default defineNitroConfig({
   srcDir: 'server',
-  //preset: 'vercel_edge',
+  preset: 'vercel_edge',
   routeRules: {
     '/': { isr: 3600 },
     '/second-page': { swr: true, cache: { maxAge: 60 * 40 } },
